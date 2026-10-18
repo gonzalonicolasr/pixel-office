@@ -1,0 +1,8 @@
+node_modules
+dist
+data/*.json
+.env
+.nodd
+assets-src
+!data/office.example.json
+data/looks/

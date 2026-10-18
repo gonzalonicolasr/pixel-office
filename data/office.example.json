@@ -1,0 +1,221 @@
+{
+  "name": "Pixel Office",
+  "agents": [
+    {
+      "id": "mate",
+      "name": "Mate",
+      "role": "Líder / Orquesta el equipo",
+      "prompt": "Sos Mate, el líder de la oficina. Entendés qué pide el usuario, lo repartís entre las personas que mejor encajan y cuando es algo simple lo contestás vos. Hablás claro, en rioplatense y sin vueltas.",
+      "providerId": "demo",
+      "model": "demo",
+      "appearance": {
+        "skin": "#f1c27d",
+        "hair": "#3b2a1a",
+        "hairStyle": "short",
+        "shirt": "#2e7d5b",
+        "pants": "#2b2b3a",
+        "accessory": "none"
+      },
+      "seat": 0,
+      "lead": true,
+      "tools": false
+    },
+    {
+      "id": "coda",
+      "name": "Coda",
+      "role": "Frontend (UI/UX y código web)",
+      "prompt": "Sos Coda, dev frontend. Te ocupás de interfaces, UX, HTML, CSS y React. Proponés soluciones concretas, con código cuando hace falta, y cuidás la accesibilidad.",
+      "providerId": "demo",
+      "model": "demo",
+      "appearance": {
+        "skin": "#e0ac69",
+        "hair": "#1a1a1a",
+        "hairStyle": "curly",
+        "shirt": "#4f6bed",
+        "pants": "#30343f",
+        "accessory": "glasses"
+      },
+      "seat": 1,
+      "tools": false
+    },
+    {
+      "id": "bruno",
+      "name": "Bruno",
+      "role": "Backend (APIs, datos e infraestructura)",
+      "prompt": "Sos Bruno, dev backend. Diseñás APIs, modelos de datos e infraestructura. Pensás en errores, performance y seguridad, y respondés con pasos claros.",
+      "providerId": "demo",
+      "model": "demo",
+      "appearance": {
+        "skin": "#c68642",
+        "hair": "#2a1b10",
+        "hairStyle": "cap",
+        "shirt": "#d35400",
+        "pants": "#3a3a3a",
+        "accessory": "headphones"
+      },
+      "seat": 2,
+      "tools": false
+    },
+    {
+      "id": "reva",
+      "name": "Reva",
+      "role": "QA (testing y seguridad)",
+      "prompt": "Sos Reva, QA. Buscás bugs, armás casos de prueba y revisás riesgos de seguridad. Sos detallista y priorizás lo que más puede romper.",
+      "providerId": "demo",
+      "model": "demo",
+      "appearance": {
+        "skin": "#ffdbac",
+        "hair": "#a0522d",
+        "hairStyle": "bun",
+        "shirt": "#8e44ad",
+        "pants": "#2c3e50",
+        "accessory": "glasses"
+      },
+      "seat": 3,
+      "tools": false
+    },
+    {
+      "id": "indu",
+      "name": "Indu",
+      "role": "Research (investiga y resume)",
+      "prompt": "Sos Indu, research. Investigás, comparás opciones y resumís lo importante en pocas líneas, separando lo que sabés de lo que suponés.",
+      "providerId": "demo",
+      "model": "demo",
+      "appearance": {
+        "skin": "#8d5524",
+        "hair": "#0f0f0f",
+        "hairStyle": "long",
+        "shirt": "#16a085",
+        "pants": "#34495e",
+        "accessory": "none"
+      },
+      "seat": 4,
+      "tools": false
+    },
+    {
+      "id": "olivia",
+      "name": "Olivia",
+      "role": "Contenido (posts, copy y LinkedIn)",
+      "prompt": "Sos Olivia, de contenido. Escribís posts, copy y textos para LinkedIn con voz cercana, un buen gancho al principio y un cierre que se recuerde.",
+      "providerId": "demo",
+      "model": "demo",
+      "appearance": {
+        "skin": "#f5d0b0",
+        "hair": "#e8b04b",
+        "hairStyle": "long",
+        "shirt": "#e84393",
+        "pants": "#2d3436",
+        "accessory": "headphones"
+      },
+      "seat": 5,
+      "tools": false
+    }
+  ],
+  "providers": [
+    {
+      "id": "demo",
+      "name": "Demo (sin API key)",
+      "kind": "demo"
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "kind": "anthropic",
+      "apiKeyEnv": "ANTHROPIC_API_KEY"
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI-compatible",
+      "kind": "openai",
+      "baseUrl": "https://api.openai.com/v1",
+      "apiKeyEnv": "OPENAI_API_KEY"
+    }
+  ],
+  "layout": {
+    "background": "/office/office-bg.png",
+    "width": 1672,
+    "height": 940,
+    "entry": {
+      "x": 838,
+      "y": 915
+    },
+    "seats": [
+      {
+        "x": 440,
+        "y": 432
+      },
+      {
+        "x": 844,
+        "y": 432
+      },
+      {
+        "x": 1249,
+        "y": 432
+      },
+      {
+        "x": 397,
+        "y": 690
+      },
+      {
+        "x": 844,
+        "y": 690
+      },
+      {
+        "x": 1288,
+        "y": 690
+      }
+    ],
+    "lights": [
+      {
+        "x": 300,
+        "y": 52
+      },
+      {
+        "x": 512,
+        "y": 90
+      },
+      {
+        "x": 845,
+        "y": 55
+      },
+      {
+        "x": 1190,
+        "y": 90
+      },
+      {
+        "x": 1360,
+        "y": 52
+      }
+    ],
+    "board": {
+      "x": 690,
+      "y": 80,
+      "w": 335,
+      "h": 135
+    },
+    "spots": [
+      {
+        "x": 857,
+        "y": 265
+      },
+      {
+        "x": 1440,
+        "y": 330
+      },
+      {
+        "x": 230,
+        "y": 560
+      },
+      {
+        "x": 1180,
+        "y": 820
+      }
+    ]
+  },
+  "settings": {
+    "workspace": "",
+    "autoApprove": false,
+    "imageProviderId": "",
+    "imageModel": ""
+  }
+}
